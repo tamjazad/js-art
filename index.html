@@ -4,32 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>endless dance</title>
-		<style>
-
-			body { margin: 0; }
-			canvas {
-				display: block;
-				position: absolute;
-				z-index: 1;
-			  left: 50%;
-			  top: 50%;
-			  transform: translate(-50%, -50%);
-			}
-			#msgcontainer {
-				 position: absolute;
-				 z-index: 5;
-				 margin: auto;
-				 display: block;
-				 left: 50%;
-				 top: 50%;
-				 font-size: 50px;
-	       transform: translate(-50%, -50%);
-				 opacity: 50%;
-			}
-			p {
-				text-align: center;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 	<body>
 		<script src="three.js"></script>
@@ -87,7 +62,14 @@
 
 		</script>
 		<div id="msgcontainer">
-			<p>ENDLESS DANCE</p>
+			<h1 id="name"><span id="firstname">TAMJEED</span> <span id="lastname">AZAD</span></h1>
+			<p id="bio">
+				<span class="about"><a href="https://www.google.com">about </a></span>
+				<span class="github"><a href="https://www.google.com">github </a></span>
+				<span class="projects"><a href="https://www.google.com">projects </a></span>
+				<span class="linkedin"><a href="https://www.google.com">linkedin </a></span>
+				<span class="about"><a href="https://www.google.com">at </a></span>
+			</p>
 		</div>
 	</body>
 </html>

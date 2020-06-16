@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Slab&display=swap');
+
+:root {
+  --selectioncolor: #FFCD94;
+}
+
+body { margin: 0; }
+
+canvas {
+
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#msgcontainer {
+   position: absolute;
+   z-index: 5;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 75%;
+}
+
+#firstname:hover, #lastname:hover {
+  color: #08e8de;
+  transition: 0.3s;
+}
+
+h1, #firstname, #lastname {
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 50px;
+  padding: 2px;
+  -webkit-transition: color 0.3s;
+}
+
+#bio {
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  font-size: 20px;
+}
+a:link, a:visited {
+  color: green;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+}
+
+a:hover, a:active {
+  color: #01FF70;
+  -webkit-transition: 0.3s;
+}
+
+body::selection {
+	background-color: var(--selectioncolor);
+}
+
+h1::selection {
+	background-color: var(--selectioncolor);
+}
+
+p::selection {
+	background-color: var(--selectioncolor);
+	color: #568EA6;
+}
+
+a::selection {
+	background-color: var(--selectioncolor);
+}
+
+#firstname::selection, #lastname::selection {
+	background-color: var(--selectioncolor);
+	color: #08e8de;;
+}
+
+#email:link, #email:visited {
+	color: crimson;
+}
+
+#email:hover, #email:active {
+	color: #C06C84;
+	-webkit-transition: 0.3s;
+}
