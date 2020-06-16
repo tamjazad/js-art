@@ -5,8 +5,30 @@
 		<meta charset="utf-8">
 		<title>endless dance</title>
 		<style>
+
 			body { margin: 0; }
-			canvas { display: block; }
+			canvas {
+				display: block;
+				position: absolute;
+				z-index: 1;
+			  left: 50%;
+			  top: 50%;
+			  transform: translate(-50%, -50%);
+			}
+			#msgcontainer {
+				 position: absolute;
+				 z-index: 5;
+				 margin: auto;
+				 display: block;
+				 left: 50%;
+				 top: 50%;
+				 font-size: 50px;
+	       transform: translate(-50%, -50%);
+				 opacity: 50%;
+			}
+			p {
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
@@ -64,5 +86,8 @@
 			animate();
 
 		</script>
+		<div id="msgcontainer">
+			<p>ENDLESS DANCE</p>
+		</div>
 	</body>
 </html>
