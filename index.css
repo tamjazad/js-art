@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solway&family=Josefin+Slab&display=swap');
 
 :root {
   --selectioncolor: #FFCD94;
@@ -22,7 +22,7 @@ canvas {
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   opacity: 75%;
+   opacity: 90%;
 }
 
 #firstname:hover, #lastname:hover {
@@ -34,15 +34,20 @@ h1, #firstname, #lastname {
   text-align: center;
   font-family: 'Josefin Slab', serif;
   font-size: 50px;
-  padding: 2px;
   -webkit-transition: color 0.3s;
 }
 
 #bio {
   text-align: center;
-  font-family: 'Handlee', cursive;
+  font-family: 'Solway', cursive;
   font-size: 20px;
 }
+
+#links {
+  background-color: #e6e6ff;
+  border-radius: 5px;
+}
+
 a:link, a:visited {
   color: green;
   text-decoration: none;
@@ -78,9 +83,13 @@ a::selection {
 
 #email:link, #email:visited {
 	color: crimson;
+  background-color: #e6e6ff;
+  border-radius: 5px;
 }
 
 #email:hover, #email:active {
 	color: #C06C84;
+  background-color: #e6e6ff;
 	-webkit-transition: 0.3s;
+  border-radius: 5px;
 }
