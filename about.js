@@ -15,6 +15,16 @@ renderer.setClearColor( color );
 document.body.appendChild( renderer.domElement );
 
 var torus_geo = new THREE.TorusKnotGeometry( 150, 25, 100, 10, 2, 3 );
-var material = new THREE.MeshBasicMaterial({
+var torus_material = new THREE.MeshBasicMaterial({
   color : 0x000000;
+})
+
+var dodec = new THREE.DodecahedronGeometry( 50, 0 );
+var dodec_material = new THREE.MeshBasicMaterial({
+  color : 0x45f32e;
+})
+
+var torus_outline = new THREE.TorusKnotGeometry( 150, 25, 100, 10, 2, 3 );
+var t_outline_material = new THREE.MeshBasicMaterial({
+  color : 0x75aefb;
 })
