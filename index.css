@@ -4,7 +4,9 @@
   --selectioncolor: #FFCD94;
 }
 
-body { margin: 0; }
+body {
+  margin: 0;
+}
 
 canvas {
 

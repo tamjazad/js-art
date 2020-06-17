@@ -1,3 +1,6 @@
+// inspired by a three.js tutorial:
+// https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
+
 var color = new THREE.Color( 0xe6e6ff );
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth /
