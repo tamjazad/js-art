@@ -2,12 +2,7 @@
 // https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
 
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(
-  75,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  1000
-);
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 var color = new THREE.Color( 0xffffff );
@@ -16,20 +11,21 @@ document.body.appendChild( renderer.domElement );
 
 var torus_geo = new THREE.TorusKnotGeometry( 150, 25, 100, 10, 2, 3 );
 var torus_material = new THREE.MeshBasicMaterial({
-  color : 0x000000;
-})
+  color : 0x66ff99
+});
 var torus = new THREE.Mesh( torus_geo, torus_material );
 
 var dodec_geo = new THREE.DodecahedronGeometry( 50, 0 );
 var dodec_material = new THREE.MeshBasicMaterial({
-  color : 0x45f32e;
-})
+  color : 0x000000
+});
 var dodec = new THREE.Mesh( dodec_geo, dodec_material );
 
 var torus_outline_geo = new THREE.TorusKnotGeometry( 150, 25, 100, 10, 2, 3 );
 var t_outline_material = new THREE.MeshBasicMaterial({
-  color : 0x75aefb;
-})
+  color : 0x58cced,
+  wireframe : true
+});
 var torus_outline = new THREE.Mesh( torus_outline_geo, t_outline_material );
 
 scene.add( torus );
@@ -40,12 +36,12 @@ camera.position.z = 500;
 
 function animate() {
   requestAnimationFrame( animate );
-  torus.rotation.x += 0.03;
-  torus.rotation.y += 0.07;
-  torus_outline.rotation.x += 0.03;
-  torus_outline.rotation.y += 0.07;
+  torus.rotation.x += 0.003;
+  torus.rotation.y += 0.02;
+  torus_outline.rotation.x += 0.003;
+  torus_outline.rotation.y += 0.02;
   dodec.rotation.x += -0.02;
-  dodec.rotation.y -= 0.05;
+  dodec.rotation.y -= 0.005;
 
   renderer.render( scene, camera );
 }
