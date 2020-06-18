@@ -45,14 +45,14 @@ camera.position.z = 500;
 
 function animate() {
   requestAnimationFrame( animate );
-  torus.rotation.x += 0.005;
-  torus.rotation.y -= 0.015;
-  torus_outline.rotation.x += 0.005;
-  torus_outline.rotation.y -= 0.015;
-  inner_torus.rotation.x += 0.01;
-  inner_torus.rotation.y += 0.005;
-  inner_torus_outline.rotation.x += 0.01;
-  inner_torus_outline.rotation.y += 0.005;
+  torus.rotation.x += 0.01;
+  torus.rotation.y -= 0.005;
+  torus_outline.rotation.x += 0.01;
+  torus_outline.rotation.y -= 0.005;
+  inner_torus.rotation.x -= 0.01;
+  inner_torus.rotation.y -= 0.005;
+  inner_torus_outline.rotation.x -= 0.01;
+  inner_torus_outline.rotation.y -= 0.005;
 
   renderer.render( scene, camera );
 }
