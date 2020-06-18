@@ -1,2 +1,2 @@
-# vis-sandbox
-sandbox for visualizations and graphics in javascript
+# js-art
+gallery of animations, visualizations, and graphics in javascript
